@@ -1,25 +1,39 @@
 <html>
     <style>
+        body {
+            background: linear-gradient(
+                #1B0880 0%, 
+                #043FDB 70%, 
+                #015E30 73%, 
+                #024B27 100%);
+        }
         h1 {
-            color: blue;
+            color: white;
+            opacity: 0.8;
+            text-align: center;
+            padding: 10px;
         }
         p {
-            background: repeating-linear-gradient(
-                45deg,
-                yellow 0,
-                blue 40,
-            );
-            padding: 20, 30, 20, 30;
-            width: 500px;
-            height: 200px;
+            padding: 20, 50, 20, 50;
+            text-align: center;
         }
+
+       div {
+         background: white;
+         border-radius: 25%;
+         width: 300px;
+         height: 200px;
+         opacity: 0.3;
+       }
     </style>
 
     <body>
     <h1>Hello World</h1>
     
+    <div name="intro">
     <p name="intro">
     This is my new website. I'm testing things that I learned from free code camp right now. 
     </p>
+    </div>
     </body>
 </html>
