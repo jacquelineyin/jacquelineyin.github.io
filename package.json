@@ -2,7 +2,7 @@
   "name": "jacquelineyin.github.io",
   "version": "1.0.0",
   "description": "",
-  "main": "./client/index.js",
+  "main": "src/client/index.js",
   "babel": {
     "presets": [
       "@babel/preset-env",
@@ -29,7 +29,6 @@
   },
   "dependencies": {
     "@babel/plugin-transform-react-jsx": "^7.12.16",
-    "antd": "^4.12.3",
     "react": "^16.13.1",
     "react-dom": "^16.14.0",
     "react-redux": "^7.2.2",
