@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "./client/index.js",
-  "babel":{
-    "presets" : [
+  "babel": {
+    "presets": [
       "@babel/preset-env",
       "@babel/preset-react"
     ]
@@ -12,7 +12,10 @@
   "scripts": {
     "start": "webpack serve --open",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "create": "webpack"
+    "create": "webpack",
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build"
   },
   "repository": {
     "type": "git",
@@ -26,18 +29,20 @@
   },
   "dependencies": {
     "@babel/plugin-transform-react-jsx": "^7.12.16",
+    "antd": "^4.12.3",
     "react": "^16.13.1",
     "react-dom": "^16.14.0",
     "react-redux": "^7.2.2",
     "redux": "^4.0.5"
   },
-  "homepage": "https://github.com/jacquelineyin/jacquelineyin.github.io#readme",
+  "homepage": "https://jacquelineyin.github.io",
   "devDependencies": {
     "@babel/core": "^7.12.16",
     "@babel/preset-env": "^7.12.16",
     "@babel/preset-react": "^7.12.13",
     "babel-loader": "^8.2.2",
     "css-loader": "^5.0.2",
+    "gh-pages": "^3.1.0",
     "html-webpack-plugin": "^5.1.0",
     "style-loader": "^2.0.0",
     "webpack": "^5.22.0",
