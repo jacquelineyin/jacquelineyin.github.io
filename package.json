@@ -2,9 +2,17 @@
   "name": "jacquelineyin.github.io",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./client/index.js",
+  "babel":{
+    "presets" : [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack serve --open",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "create": "webpack"
   },
   "repository": {
     "type": "git",
@@ -15,6 +23,13 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jacquelineyin/jacquelineyin.github.io/issues"
+  },
+  "dependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.12.16",
+    "react": "^16.13.1",
+    "react-dom": "^16.14.0",
+    "react-redux": "^7.2.2",
+    "redux": "^4.0.5"
   },
   "homepage": "https://github.com/jacquelineyin/jacquelineyin.github.io#readme",
   "devDependencies": {
