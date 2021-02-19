@@ -12,7 +12,14 @@
   "scripts": {
     "start": "webpack serve --open",
     "test": "echo \"Error: no test specified\" && exit 1",
+<<<<<<< Updated upstream
     "create": "webpack"
+=======
+    "create": "webpack",
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+>>>>>>> Stashed changes
   },
   "repository": {
     "type": "git",
