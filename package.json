@@ -2,9 +2,15 @@
   "name": "jacquelineyin.github.io",
   "version": "1.0.0",
   "description": "",
+<<<<<<< HEAD
   "main": "src/client/index.js",
   "babel": {
     "presets": [
+=======
+  "main": "./client/index.js",
+  "babel":{
+    "presets" : [
+>>>>>>> 2085eb3 (fixed npm script: deploys to gh-pages and not to master)
       "@babel/preset-env",
       "@babel/preset-react"
     ]
@@ -12,10 +18,21 @@
   "scripts": {
     "start": "webpack serve --open",
     "test": "echo \"Error: no test specified\" && exit 1",
+<<<<<<< HEAD
     "create": "webpack",
     "build": "webpack --mode production",
     "predeploy": "npm run build",
     "deploy": "gh-pages -b master -d build"
+=======
+<<<<<<< Updated upstream
+    "create": "webpack"
+=======
+    "create": "webpack",
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+>>>>>>> Stashed changes
+>>>>>>> 2085eb3 (fixed npm script: deploys to gh-pages and not to master)
   },
   "repository": {
     "type": "git",
@@ -34,14 +51,21 @@
     "react-redux": "^7.2.2",
     "redux": "^4.0.5"
   },
+<<<<<<< HEAD
   "homepage": "https://jacquelineyin.github.io",
+=======
+  "homepage": "https://github.com/jacquelineyin/jacquelineyin.github.io#readme",
+>>>>>>> 2085eb3 (fixed npm script: deploys to gh-pages and not to master)
   "devDependencies": {
     "@babel/core": "^7.12.16",
     "@babel/preset-env": "^7.12.16",
     "@babel/preset-react": "^7.12.13",
     "babel-loader": "^8.2.2",
     "css-loader": "^5.0.2",
+<<<<<<< HEAD
     "gh-pages": "^3.1.0",
+=======
+>>>>>>> 2085eb3 (fixed npm script: deploys to gh-pages and not to master)
     "html-webpack-plugin": "^5.1.0",
     "style-loader": "^2.0.0",
     "webpack": "^5.22.0",
