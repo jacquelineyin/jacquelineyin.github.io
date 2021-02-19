@@ -2,15 +2,9 @@
   "name": "jacquelineyin.github.io",
   "version": "1.0.0",
   "description": "",
-<<<<<<< HEAD
-  "main": "src/client/index.js",
-  "babel": {
-    "presets": [
-=======
   "main": "./client/index.js",
   "babel":{
     "presets" : [
->>>>>>> 2085eb3 (fixed npm script: deploys to gh-pages and not to master)
       "@babel/preset-env",
       "@babel/preset-react"
     ]
@@ -18,6 +12,7 @@
   "scripts": {
     "start": "webpack serve --open",
     "test": "echo \"Error: no test specified\" && exit 1",
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     "create": "webpack",
@@ -30,15 +25,24 @@
 =======
 =======
 >>>>>>> 15c5ffb (fixed packages to enable build on gh-pages)
+=======
+<<<<<<< Updated upstream
+    "create": "webpack"
+=======
+>>>>>>> e73c6b6 (fixed npm script: deploys to gh-pages and not to master)
     "create": "webpack",
     "build": "webpack --mode production",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> Stashed changes
 >>>>>>> 2085eb3 (fixed npm script: deploys to gh-pages and not to master)
 =======
 >>>>>>> 15c5ffb (fixed packages to enable build on gh-pages)
+=======
+>>>>>>> Stashed changes
+>>>>>>> e73c6b6 (fixed npm script: deploys to gh-pages and not to master)
   },
   "repository": {
     "type": "git",
