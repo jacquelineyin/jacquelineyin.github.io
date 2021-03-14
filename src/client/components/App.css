@@ -1,0 +1,14 @@
+body {
+    background: #001529; 
+}
+
+
+/** Ant Header Styling **/
+
+#main-header {
+    color: white;
+    font-size: large;
+    background: #4C2E05;
+    border-bottom-style: solid;
+    border-bottom-color: #7A8450;
+}
