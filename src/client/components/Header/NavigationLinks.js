@@ -12,11 +12,9 @@ export const NavigationLinks = (props) => {
     if (children) {
         return (
             <li className='nav-link'>
-                <Link to={`/#${children.pathname}`}>{children.label}</Link>
+                <Link to={`/#${children.id}`}>{children.label}</Link>
             </li>
         );
-    } else {
-        return null;
-    }
+    } 
     return null;   
 }

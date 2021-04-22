@@ -12,3 +12,10 @@ body {
     border-bottom-style: solid;
     border-bottom-color: #7A8450;
 }
+
+/** Ant Content Styling **/
+
+#content {
+    background: #001529;
+    color: white;
+}

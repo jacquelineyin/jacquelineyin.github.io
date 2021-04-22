@@ -1,0 +1,8 @@
+#about {
+    display: flex;
+}
+
+.description {
+    padding-top: 15vh;
+    align-self: center;
+}

@@ -1,7 +1,6 @@
-import ErrorBoundary from 'antd/lib/alert/ErrorBoundary';
 import React from 'react';
-import './HeaderContent.css';
 import { NavigationLinks } from './NavigationLinks';
+import './HeaderContent.css';
 
 export const HeaderContent = () => {
     let navs = getNavObjects();
@@ -9,7 +8,7 @@ export const HeaderContent = () => {
     return ( 
         <div className='header-content'>
             <div className='header-title'>Jackie's Portfolio</div>
-            {createNavigationLinks(navs)}
+            {createNavigation(navs)}
         </div>
         )
 }
@@ -19,11 +18,11 @@ export const HeaderContent = () => {
  * @param {Array} navs = array of nav objects
  * Ex. 
  *    [
- *      {label: 'About', pathname: '/about'},
+ *      {label: 'About', pathname: 'about'},
  *      ...
  *    ]
  */
-const createNavigationLinks = (navs) => {
+const createNavigation = (navs) => {
     if (navs) {
         let navLink = navs.map(nav => 
             <NavigationLinks key={nav.label}>{nav}</NavigationLinks>);
@@ -40,8 +39,8 @@ const createNavigationLinks = (navs) => {
 
 const getNavObjects = () => {
     let navs = [];
-    let about = { label: 'About', pathname: 'about'};
-    let projects = { label: 'Projects', pathname: 'projects'};
+    let about = { label: 'About', id: 'about'};
+    let projects = { label: 'Projects', id: 'projects'};
 
     navs.push(about);
     navs.push(projects);
