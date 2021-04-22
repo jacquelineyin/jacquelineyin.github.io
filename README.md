@@ -1,6 +1,12 @@
 # Portfolio Website
 Website: jacquelineyin.github.io
 
+### Running the app
+In the project directory, run `npm start`
+
+### Deployment
+In the project directory, run `npm deploy`
+
 ### Sources / References used
 ##### Creating a React-app from Scratch
 - [A guide to creating a React app without create-react-app](https://medium.com/javascript-in-plain-english/a-guide-to-creating-a-react-app-without-create-react-app-5337c5ac2ea0)
