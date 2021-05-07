@@ -1,13 +1,13 @@
-import React from 'react';
-import { NavigationLinks } from './NavigationLinks';
-import './HeaderContent.css';
+import React from "react";
+import { NavigationLinks } from "./NavigationLinks";
+import "./HeaderContent.css";
 
 export const HeaderContent = () => {
     let navs = getNavObjects();
 
     return ( 
-        <div className='header-content'>
-            <div className='header-title'>Jackie's Portfolio</div>
+        <div className="header-content">
+            <div className="header-title">Jackie's Portfolio</div>
             {createNavigation(navs)}
         </div>
         )
@@ -18,7 +18,7 @@ export const HeaderContent = () => {
  * @param {Array} navs = array of nav objects
  * Ex. 
  *    [
- *      {label: 'About', pathname: 'about'},
+ *      {label: "About", pathname: "about"},
  *      ...
  *    ]
  */
@@ -28,7 +28,7 @@ const createNavigation = (navs) => {
             <NavigationLinks key={nav.label}>{nav}</NavigationLinks>);
 
         return (
-            <ul className='nav'>
+            <ul className="nav">
                 {navLink}
             </ul>
         )
@@ -39,10 +39,12 @@ const createNavigation = (navs) => {
 
 const getNavObjects = () => {
     let navs = [];
-    let about = { label: 'About', id: 'about'};
-    let projects = { label: 'Projects', id: 'projects'};
+    let about = { label: "About", id: "about"};
+    let projects = { label: "Projects", id: "projects"};
+    let contact = { label: "Contact", id: "contact"};
 
     navs.push(about);
     navs.push(projects);
+    navs.push(contact);
     return navs;
 }

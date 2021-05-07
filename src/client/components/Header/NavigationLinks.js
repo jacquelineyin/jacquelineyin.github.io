@@ -7,8 +7,6 @@ export const NavigationLinks = (props) => {
     let { children, keyVal } = props;
     let location = useLocation();
     
-    console.log(children);
-
     if (children) {
         return (
             <li className='nav-link'>
