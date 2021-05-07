@@ -1,8 +1,13 @@
 #about {
     display: flex;
+    justify-content: center;
 }
 
 .description {
     padding-top: 15vh;
     align-self: center;
+}
+
+.introduction-container {
+    width: 50%;
 }

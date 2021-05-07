@@ -19,3 +19,8 @@ body {
     background: #001529;
     color: white;
 }
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
