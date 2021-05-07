@@ -1,18 +1,15 @@
-import React from 'react';
-import './About.css';
+import React from "react";
+import "./About.css";
+import { SocialMedia } from "../SocialMedia";
+import { Description } from "./Description";
 
 export const About = () => {
     return (
-        <div id='about'>
-            {getDescription()}
-        </div>
-    )
-}
-
-const getDescription = () => {
-    return (
-        <div className='description'>
-            Hello! I am a junior software developer.
+        <div id="about">
+            <div class="col introduction-container">
+                <Description />
+                <SocialMedia />
+            </div>
         </div>
     )
 }
