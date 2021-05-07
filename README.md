@@ -19,3 +19,6 @@ In the project directory, run `npm deploy`
 
 ##### Adding Ant Framework
 - [Customize Ant Design with React](https://www.signifyd.com/blog/2017/06/18/customize-ant-design-with-react/)
+
+##### Other
+- [Open Link in New Tab](https://stackoverflow.com/questions/45046030/maintaining-href-open-in-new-tab-with-an-onclick-handler-in-react)
