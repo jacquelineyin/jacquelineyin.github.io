@@ -1,16 +1,26 @@
 import React from "react";
 import { Layout } from 'antd';
+import ErrorBoundary from "antd/lib/alert/ErrorBoundary";
+import { HeaderContent } from "./Header/HeaderContent";
+import { About } from "./About/About"
+import './App.css';
 
-const { Header, Footer, Sider, Content } = Layout;
+const { Header, Content } = Layout;
 
 const App = () => {
     return (
-        <Layout>
-            <Header>Header</Header>
-            <div>
-                <h2>Jackie's Website</h2>
-            </div>
-        </Layout>
+        <ErrorBoundary>
+            <Layout>
+                <Header id='main-header'>
+                    <HeaderContent />
+                </Header>
+
+                <Content id='content'>
+                    <About profileImg={null} />
+                </Content>
+
+            </Layout>
+        </ErrorBoundary>
     )
 }
 

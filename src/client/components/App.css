@@ -1,0 +1,25 @@
+body {
+  background: #001529;
+}
+
+/** Ant Header Styling **/
+
+#main-header {
+  color: white;
+  font-size: large;
+  background: #787d84;
+  /* border-bottom-style: solid; */
+  /* border-bottom-color: #7A8450; */
+}
+
+/** Ant Content Styling **/
+
+#content {
+  background: #001529;
+  color: white;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
