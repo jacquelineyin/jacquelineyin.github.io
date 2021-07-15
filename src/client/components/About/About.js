@@ -6,7 +6,7 @@ import { Description } from "./Description";
 export const About = () => {
     return (
         <div id="about">
-            <div class="col introduction-container">
+            <div className="col introduction-container">
                 <Description />
                 <SocialMedia />
             </div>

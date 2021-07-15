@@ -12,12 +12,12 @@ const App = () => {
         <ErrorBoundary>
             <Layout>
                 <Header id='main-header'>
-                    <HeaderContent/>
+                    <HeaderContent />
                 </Header>
 
                 <Content id='content'>
                     <About profileImg={null} />
-                </Content>   
+                </Content>
 
             </Layout>
         </ErrorBoundary>
