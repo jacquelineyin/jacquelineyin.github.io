@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDom from 'react-dom';
 import { HashLink as Link } from 'react-router-hash-link';
 
 
