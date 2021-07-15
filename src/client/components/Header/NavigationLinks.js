@@ -1,18 +1,19 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-import {  useLocation, Link } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
+
+
 import './NavigationLinks.css'
 
 export const NavigationLinks = (props) => {
-    let { children, keyVal } = props;
-    let location = useLocation();
-    
+    let { children } = props;
+
     if (children) {
         return (
             <li className='nav-link'>
-                <Link to={`/#${children.id}`}>{children.label}</Link>
+                <Link to={{ hash: `${children.id}` }}>{children.label}</Link>
             </li>
         );
-    } 
-    return null;   
+    }
+    return null;
 }
